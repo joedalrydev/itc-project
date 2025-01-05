@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            background: rgb(31, 31, 31);
+            font-family: sans-serif;
+            color: white;
+            font-size: 18px;
+            overflow: hidden;
+        }
+        .nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul li {
+            margin: 20px;
+            list-style-type: none;
+        }
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav ul li a:hover{
+            color: rgb(216, 78, 78);
+            border-bottom: 3px solid rgb(216, 78, 78);
+        }
+        .container {
+            line-height: 1.5;
+            padding: 3rem;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(1000px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .container a {
+            text-decoration: none;
+            color: white;
+            background: rgb(216, 78, 78);
+            padding: 0.75rem;
+            border-radius: 10px;
+            border: 2px solid rgb(216, 78, 78);
+            font-weight: 600;
+        }
+        .container a:hover {
+            color: rgb(216, 78, 78);
+            background: inherit;
+        }
+        span {
+            color: rgb(216, 78, 78);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" style="color: rgb(216, 78, 78); border-bottom: 3px solid rgb(216, 78, 78);">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Hi!</h1>
+        <h1>We are <span>John Joedalry Palmero</span></h1>
+        <h2>We're Computer Science students at <span>Cavite State University - Main Campus.</span></h2>
+        <p>This is a project website for DCIT 21 - Introduction to Computing.</p> <br>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+</body>
+</html>
