@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth !important;
+}
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 1rem;
+    background-color: #141018;
+    border-bottom: 1px solid #333;
+}
+.nav ul li {
+    font-weight: 700;
+    margin: 0 1rem;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.nav ul li a:hover {
+    color: #9DBDD7;
+    border-bottom: 3px solid #9DBDD7;
+}
+span {
+    color: #9DBDD7;
+}
+
+.img {
+    float:right;
+}
+.container {
+    background-image: url(./images/background.png);
+    color: white;
+    line-height: 1.5;
+    padding: 3rem;
+    height: 100vh;
+}
+.container a {
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.container a:hover {
+    color: #9DBDD7;
+    border: 2px solid #9DBDD7;
+    background: inherit;
+}
+#overview {
+    text-align: center;
+    padding: 3rem;
+    line-height: 1.5;
+}
+#overview a {
+    text-decoration: none;
+    color: black;
+    background-color: inherit;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 600;
+}
+#overview a:hover {
+    color: white;
+    border: 2px solid #9DBDD7;
+    background-color: #9DBDD7;
+}
+.examples {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 3rem;
+}
+.example {
+    text-align: center;
+    line-height: 1.5;
+    background-color: wheat;
+    border-radius: 15px;
+    padding: 1rem;
+}
+.example img {
+    width: 100px;
+}
+.languages {
+    padding: 3rem;
+    line-height: 1.5;
+}
+
+.languages h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.languages div {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.languages img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.languages h2, .languages h3 {
+    color: #444;
+    text-align: center;
+}
+
+.languages p, .languages ul {
+    color: #555;
+    text-align: justify;
+}
+
+.languages a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.languages a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
