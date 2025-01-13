@@ -138,3 +138,61 @@ span {
     color: #003366;
     text-decoration: underline;
 }
+
+.about {
+    padding: 3rem;
+    line-height: 1.5;
+    background-image: url(./images/background.png);
+}
+
+.about h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.profile {
+    text-align: center;
+    line-height: 1.5;
+    background-color: inherit;
+    border-radius: 15px;
+    padding: 1rem;
+    color: #9DBDD7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.details {
+    display: none;
+    text-align: left;
+    background-color: #141018;
+    padding: 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 900px;
+    border: 1px solid #333;
+}
+
+input[type="radio"]:checked + label {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+input[type="radio"]:checked + label .details {
+    display: block;
+}
+
