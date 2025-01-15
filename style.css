@@ -1,3 +1,4 @@
+/* GLOBAL STYLES*/
 * {
     margin: 0;
 }
@@ -31,7 +32,9 @@ body {
 span {
     color: #9DBDD7;
 }
+/* END OF GLOBAL STYLES */
 
+/* HOME PAGE */
 .img {
     float:right;
 }
@@ -41,8 +44,45 @@ span {
     line-height: 1.5;
     padding: 3rem;
     height: 100vh;
+    overflow: hidden;
 }
-.container a {
+
+.text,
+.img {
+    animation: slideUp 1s ease-in;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.about-button,
+.languages-button,
+.overview-button,
+#overview a {
+    display: inline-block;
+}
+.overview-button,
+.languages-button {
+    text-decoration: none;
+    color: white;
+    background-color: #5187b3;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 2px solid #5187b3;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+.overview-button:hover,
+.languages-button:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
+}
+.about-button {
     text-decoration: none;
     color: white;
     background-color: inherit;
@@ -50,12 +90,16 @@ span {
     border-radius: 10px;
     border: 2px solid white;
     font-weight: 600;
+    transition: 0.2s ease-in-out;
 }
-.container a:hover {
-    color: #9DBDD7;
+.about-button:hover {
+    transform: translateY(-5px);
+    color:  #9DBDD7;
     border: 2px solid #9DBDD7;
     background: inherit;
 }
+
+/* Overview */
 #overview {
     text-align: center;
     padding: 3rem;
@@ -63,34 +107,40 @@ span {
 }
 #overview a {
     text-decoration: none;
-    color: black;
-    background-color: inherit;
+    color: white;
+    background-color: #5187b3;
+    border: 2px solid #5187b3;
     padding: 0.75rem;
     border-radius: 10px;
-    border: 2px solid black;
     font-weight: 600;
+    transition: transform 0.2s ease-in-out;
 }
 #overview a:hover {
-    color: white;
-    border: 2px solid #9DBDD7;
-    background-color: #9DBDD7;
+    opacity: 0.9;
+    transform: translateY(-5px);
 }
 .examples {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     padding: 3rem;
+    flex-basis: 60%;
 }
 .example {
     text-align: center;
-    line-height: 1.5;
     background-color: wheat;
     border-radius: 15px;
     padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+.example:hover {
+    transform: scale(1.1);
 }
 .example img {
     width: 100px;
 }
+/*END OF HOME PAGE*/
+
+/* LANGUAGES PAGE */
 .languages {
     padding: 3rem;
     line-height: 1.5;
@@ -129,15 +179,20 @@ span {
     display: block;
     text-align: center;
     margin-top: 1rem;
-    color: #0066cc;
+    padding: 0.75rem;
+    color: white;
+    background-color: #5187b3;
+    border: 2px solid #5187b3;
+    transition: transform 0.2s ease-in-out;
     text-decoration: none;
     font-weight: 600;
 }
 
 .languages a:hover {
-    color: #003366;
-    text-decoration: underline;
+    opacity: 0.9;
+    transform: translateY(-5px);
 }
+/*END OF LANGUAGES PAGE*/
 
 .about {
     padding: 3rem;
