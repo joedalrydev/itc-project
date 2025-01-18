@@ -36,10 +36,10 @@ span {
     padding: 2.7rem;
 }
 .arrow-img {
-    height: 100px;
+    height: 100px;;
 }
 .arrow-img:hover {
-    opacity: 0.8;
+    filter: invert(31%) sepia(85%) saturate(350%) hue-rotate(185deg)
 }
 /*END OF GLOBAL STYLES*/
 
@@ -203,7 +203,11 @@ span {
 }
 .language-img img {
     width: 400px;
-    height: 500px;
+    height: 400px;
+}
+#python-img img {
+    width: 400px;
+    height: 398px;
 }
 .link {
     text-decoration: none;
@@ -275,7 +279,6 @@ span {
 }
 
 input[type="radio"]:checked + label {
-    transform: scale(1.05);
     opacity: 1;
 }
 
