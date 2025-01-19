@@ -1,4 +1,8 @@
 /*GLOBAL STYLES*/
+@font-face {
+    font-family: 'Figtree';
+    src: url(./fonts/Figtree-VariableFont_wght.ttf);
+}
 * {
     margin: 0;
 }
@@ -6,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Figtree',sans-serif;
     font-size: 20px;
 }
 .nav ul {
@@ -106,14 +110,14 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 600px;
+    max-width: 1000px;
     line-height: 2;
 }
 .overview-text h2 {
     font-size: 50px;
 }
 .overview-text p {
-    font-size: 20px;
+    font-size: 30px;
 }
 #examples {
     display: flex;
