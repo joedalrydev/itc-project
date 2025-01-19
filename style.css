@@ -129,6 +129,9 @@ span {
     gap: 20px;
     margin-bottom: 4rem;
 }
+#examples h2 {
+    font-size: 50px;
+}
 .top-lang {
     display: grid;
     justify-content: center;
