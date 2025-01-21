@@ -344,3 +344,34 @@ input[type="radio"]:checked + label .details {
     display: block;
 }
 /* END OF ABOUT PAGE */
+
+/* SAMPLE PROJECTS */
+.projects-overview {
+    background-image: url(./images/background.png);
+    display: flex;
+    height: 650px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5; 
+}
+.projects-overview-text {
+    width: 70%;
+    color: white;
+    line-height: 2;
+    font-size: 35px;
+}
+.projects {
+    background-color: #141018;
+    color: white;
+}
+
+.projects h1 {
+    padding-top: 2rem;
+    font-size: 50px;
+    text-align: center;
+}
+
+.proj-img img {
+    size: 20%;
+}
