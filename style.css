@@ -146,12 +146,13 @@ span {
 }
 .example {
     text-align: center;
-    background-color: #141018;
+    background-color: #14101888;
     border-radius: 15px;
     line-height: 1.4;
     width: 45%;
     padding: 1rem;
     color: white;
+    backdrop-filter: blur(3px);
 }
 .example img {
     width: 100px;
