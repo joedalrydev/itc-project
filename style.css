@@ -11,13 +11,13 @@ html {
 }
 body {
     font-family: 'Figtree',sans-serif;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     background-color: #141018;
     color: white;
 }
 .nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     list-style-type: none;
     padding: 1rem;
     background-color: #141018;
@@ -26,6 +26,8 @@ body {
 .nav ul li {
     font-weight: 700;
     margin: 0 1rem;
+    border-right: 3px solid #333;
+    padding-right: 1rem;
 }
 .nav ul li a {
     text-decoration: none;
@@ -59,15 +61,8 @@ span {
     color: white;
     line-height: 1.5;
     padding: 3rem;
-    height: 650px;
-    overflow: hidden;
-}
-
-.about-button,
-.languages-button,
-.overview-button,
-#overview a {
-    display: inline-block;
+    height: 100vh;
+    font-size: 1.5rem;
 }
 .overview-button,
 .languages-button {
@@ -101,7 +96,9 @@ span {
 
 /* OVERVIEW */
 #overview {
+    background-image: url(./images/background-blur.png);
     height: 100vh;
+    display: flex;
     text-align: center;
     justify-content: center;
     padding: 1rem;
@@ -109,32 +106,33 @@ span {
     color: white;
 }
 .overview-text {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     max-width: 1000px;
     line-height: 2;
+    backdrop-filter: blur(3px);
 }
 .overview-text h2 {
     font-size: 3em;
 }
 .overview-text p {
-    font-size: 1.3em;
+    font-size: 1.7rem;
 }
 #examples {
+    background-image: url(./images/background-blur.png);
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: fit-content;
     padding: 3rem;
     gap: 20px;
-    margin-bottom: 4rem;
     color:#9DBDD7;
 }
 #examples h2 {
-    font-size: 3em;
+    font-size: 2rem;
 }
 .top-lang {
     display: grid;
@@ -148,7 +146,7 @@ span {
 }
 .example {
     text-align: center;
-    background-color: #333;
+    background-color: #141018;
     border-radius: 15px;
     line-height: 1.4;
     width: 45%;
@@ -174,7 +172,7 @@ span {
     width: 70%;
     color: white;
     line-height: 2;
-    font-size: 1.9em;
+    font-size: 2.3rem;
 }
 .languages {
     padding: 3rem;
@@ -192,10 +190,10 @@ span {
     align-items: center;
     height: 100vh;
     width: 100%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
 .description h2 {
-    font-size: 3em;
+    font-size: 4rem;
     margin-top: 2rem;
 }
 .content {
@@ -264,7 +262,27 @@ span {
     width: 70%;
     color: white;
     line-height: 2;
-    font-size: 1.4em;
+    font-size: 2rem;
+}
+.history {
+    background-image: url(./images/background.png);
+    padding: 3rem;
+}
+#history-content {
+    align-items: center;
+    backdrop-filter: blur(2px);
+    padding: 3rem;
+    line-height: 2;
+    font-size: 2rem;
+}
+#history-content h1,
+#history-content h2 {
+    text-align: center;
+}
+#history-content p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 3rem;
 }
 /*END OF HISTORY*/
 
@@ -282,7 +300,55 @@ span {
     width: 70%;
     color: white;
     line-height: 2;
-    font-size: 1.5em;
+    font-size: 2rem;
+}
+.careers {
+    background-image: url(./images/background.png);
+    padding: 3rem;
+}
+#software-engineer,
+#web-developer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    padding: 3rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#data-scientist,
+#game-developer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+.career-description {
+    flex-basis: 70%; 
+    line-height: 1.5;
+}
+.career-img {
+    flex-basis: 30%;
+}
+.career-img-right {
+    flex-basis: 30%;
+}
+.career-img img,
+.career-img-right img {
+    height: 400px;
+    width: 400px;
+    border: 10px solid #9DBDD7;
+    border-radius: 15px;
+}
+.career-description {
+    padding-left: 2rem;
 }
 /*END OF CAREERS*/
 
@@ -292,14 +358,6 @@ span {
     padding: 3rem;
     line-height: 1.5;
     height: 100vh;
-}
-.about a {
-    text-decoration: none;
-    color: #5187b3;
-}
-.about a:hover {
-    text-decoration: underline;
-    opacity: 0.9;
 }
 .about h1{
     text-align: center;
@@ -337,6 +395,24 @@ span {
     width: 900px;
     border: 1px solid #333;
 }
+.contact-links {
+    display: flex;
+    gap: 20px;
+    padding-top: 1rem;
+}
+.contact-links .fa, .contact-links .fa-brands {
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.contact-links .fa:hover, .contact-links .fa-brands:hover {
+    color: #141018;
+    background-color: white;
+    box-shadow: 0 0 20px white;
+}
 input[type="radio"]:checked + label {
     opacity: 1;
 }
@@ -347,7 +423,7 @@ input[type="radio"]:checked + label .details {
 
 /* SAMPLE PROJECTS */
 .projects-overview {
-    background-image: url(./images/background.png);
+    background-image: url(./images/background-blur.png);
     display: flex;
     height: 650px;
     text-align: center;
@@ -359,19 +435,23 @@ input[type="radio"]:checked + label .details {
     width: 70%;
     color: white;
     line-height: 2;
-    font-size: 35px;
+    font-size: 2rem;
 }
 .projects {
-    background-color: #141018;
+    background-image: url(/images/background.png);
     color: white;
+    padding: 3rem;
 }
 
 .projects h1 {
     padding-top: 2rem;
-    font-size: 50px;
+    font-size: 4rem;
     text-align: center;
 }
-
+#python-proj {
+    backdrop-filter: blur(3px);
+    /* gayahin mo to sa ibang projects */
+}
 .proj-img img {
     size: 20%;
 }
