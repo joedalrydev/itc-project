@@ -413,7 +413,11 @@ span {
     background-color: white;
     box-shadow: 0 0 20px white;
 }
+.profiles img:hover {
+    transform: scale(1.05);
+}
 input[type="radio"]:checked + label {
+    transform: scale(1.05);
     opacity: 1;
 }
 input[type="radio"]:checked + label .details {
@@ -437,21 +441,23 @@ input[type="radio"]:checked + label .details {
     line-height: 2;
     font-size: 2rem;
 }
+
 .projects {
-    background-image: url(/images/background.png);
-    color: white;
+    background-image: url(./images/background-blur.png);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
     padding: 3rem;
+    gap: 20px;
+    color:#9DBDD7;
+}
+.projects h2 {
+    font-size: 2rem;
 }
 
-.projects h1 {
-    padding-top: 2rem;
-    font-size: 4rem;
-    text-align: center;
-}
-#python-proj {
-    backdrop-filter: blur(3px);
-    /* gayahin mo to sa ibang projects */
-}
-.proj-img img {
-    size: 20%;
+.projects img {
+    height: 60px;
+    width: auto;
 }
